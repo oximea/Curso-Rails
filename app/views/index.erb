@@ -1,0 +1,24 @@
+<html>
+
+<body>
+<h1> Listando Usuarios</h1>
+<table>
+
+    <tr>
+        <td>Nombre</td>
+        <td>Email</td>
+
+    </tr>
+
+    <tr>
+      <%User.all.each do |usuario|%>
+
+        <td> <%=usuario.nombre %></td>
+          <td> <%=usuario.email %></td>
+          <%end%>
+
+    </tr>
+
+</table>
+          </body>
+          </html>
